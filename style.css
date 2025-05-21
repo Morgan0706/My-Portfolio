@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, #74ebd5, #9face6);
+    text-align: center;
+     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px; 
+
+}
+#mk{
+    text-decoration: none;
+}
+.links{
+    text-decoration: none;
+}
+.links :hover{
+    color: aliceblue; 
+    background-color: rgb(15, 198, 211);
+}
+
+header {
+    background-color: white;
+    padding: 16px 32px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 32px;
+    margin-top: 32px;
+    text-align: center;
+    animation: fadeIn 3s ease-out forwards;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #0a0068;
+}
+
+p {
+    font-size: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 32px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    width: 800px;
+    margin: 24px;  
+     flex-direction: column;  
+     display: flex;
+   
+}
+
+footer{
+    background-color: rgb(205, 255, 253);
+    width: 100%;
+    margin: 0%;
+    padding: 8px;
+    position: absolute;
+ 
+    left: 0%;
+    
+}
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    background-color: #0a0068;
+    color: azure;
+    align-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-100px);}
+    to { opacity: 1; transform: translateY(0px);}
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .card {
+        width: 90%
+    }
+}
+
+
